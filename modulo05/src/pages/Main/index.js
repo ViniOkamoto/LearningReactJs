@@ -137,7 +137,6 @@ class Main extends Component {
                     const getLSRepo = localStorage.getItem('repositories');
                     const getLSRepoNameArr = JSON.parse(getLSRepo);
                     for (let i = 0; i < getLSRepoNameArr.length; i += 1) {
-                      console.log(getLSRepoNameArr[i].name);
                       if (getLSRepoNameArr[i].name === repository.name) {
                         getLSRepoNameArr.splice(i, 1);
                         localStorage.setItem(
